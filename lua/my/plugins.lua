@@ -48,9 +48,11 @@ require("lazy").setup({
 
     -- plugin/lsp.lua
     {
-        "williamboman/mason.nvim",
-        "williamboman/mason-lspconfig.nvim",
         "neovim/nvim-lspconfig",
+        dependencies = {
+            { "williamboman/mason.nvim", build = ":MasonUpdate" },
+            "williamboman/mason-lspconfig.nvim",
+        }
     },
 
     -- plugin/telescope.lua
