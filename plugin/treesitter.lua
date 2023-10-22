@@ -1,4 +1,7 @@
 require("nvim-treesitter.configs").setup {
+    ensure_installed = {
+        "lua", "python", "typescript", "rust", "go", "yaml", "toml"
+    },
     sync_install = false,
     highlight = {
         enable = true,
