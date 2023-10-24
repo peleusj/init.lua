@@ -39,7 +39,7 @@ vim.opt.wildignorecase = true
 vim.opt.updatetime = 100
 vim.opt.timeoutlen = 600
 
-vim.opt.clipboard:prepend { 'unnamed', 'unnamedplus' }
+vim.opt.clipboard:append { 'unnamedplus' }
 
 vim.opt.termguicolors = true
 
