@@ -13,11 +13,14 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     {
-        "rebelot/kanagawa.nvim",
+        -- "EdenEast/nightfox.nvim",
+        -- "rebelot/kanagawa.nvim",
+        -- "rose-pine/nvim", name = "rose-pine"
+        "stevedylandev/flexoki-nvim", name = 'flexoki',
         lazy = false,
         priority = 1000,
         config = function()
-            vim.cmd("colorscheme kanagawa")
+            vim.cmd("colorscheme flexoki")
         end
     },
 
@@ -50,7 +53,7 @@ require("lazy").setup({
     {
         "neovim/nvim-lspconfig",
         dependencies = {
-            { "williamboman/mason.nvim", build = ":MasonUpdate" },
+            "williamboman/mason.nvim",
             "williamboman/mason-lspconfig.nvim",
         }
     },
