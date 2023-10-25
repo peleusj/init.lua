@@ -15,6 +15,7 @@ require("lazy").setup({
     {
         -- "EdenEast/nightfox.nvim",
         -- "rose-pine/nvim", name = "rose-pine"
+        -- { "echasnovski/mini.base16", version = false },
         "rebelot/kanagawa.nvim",
         lazy = false,
         priority = 1000,
@@ -79,6 +80,18 @@ require("lazy").setup({
     -- plugin/git.lua
     "tpope/vim-fugitive",
     "lewis6991/gitsigns.nvim",
+
+    {
+        "nvim-tree/nvim-tree.lua",
+        version = "*",
+        lazy = false,
+        dependencies = {
+            "nvim-tree/nvim-web-devicons",
+        },
+        config = function()
+            require("nvim-tree").setup {}
+        end,
+    },
 
     -- miscellaneous
     "fladson/vim-kitty",
