@@ -14,13 +14,12 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
     {
         -- "EdenEast/nightfox.nvim",
-        -- "rebelot/kanagawa.nvim",
         -- "rose-pine/nvim", name = "rose-pine"
-        "stevedylandev/flexoki-nvim", name = 'flexoki',
+        "rebelot/kanagawa.nvim",
         lazy = false,
         priority = 1000,
         config = function()
-            vim.cmd("colorscheme flexoki")
+            vim.cmd("colorscheme kanagawa")
         end
     },
 
