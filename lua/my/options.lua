@@ -1,5 +1,8 @@
 vim.g.mapleader = ' '
 
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
 vim.opt.number = true
 vim.opt.relativenumber = true
 
@@ -59,10 +62,6 @@ vim.opt.pumblend = 0
 
 -- https://github.com/neovim/neovim/pull/17266
 vim.opt.laststatus = 3
-
--- disable netrw at the very start of your init.lua
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
 
 -- use ':grep' to send resulsts to quickfix
 -- use ':lgrep' to send resulsts to loclist
