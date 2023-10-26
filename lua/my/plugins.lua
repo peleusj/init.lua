@@ -85,8 +85,12 @@ require("lazy").setup({
             "nvim-tree/nvim-web-devicons",
         },
         config = function()
-            require("nvim-tree").setup {}
-            vim.keymap.set("n", "<leader>tt", ":NvimTreeToggle<CR>")
+            require("nvim-tree").setup {
+                view = {
+                    width = 18,
+                }
+            }
+            vim.keymap.set("n", "<leader>ww", ":NvimTreeToggle<CR>")
         end,
     },
 
