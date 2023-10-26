@@ -87,7 +87,7 @@ require("lazy").setup({
         config = function()
             require("nvim-tree").setup {
                 view = {
-                    width = 18,
+                    width = 30,
                 }
             }
             vim.keymap.set("n", "<leader>ww", ":NvimTreeToggle<CR>")

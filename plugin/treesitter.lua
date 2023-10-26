@@ -5,6 +5,7 @@ require("nvim-treesitter.configs").setup {
         "go",
         "rust",
         "typescript",
+        "sql",
         "bash",
         "yaml",
         "toml"
