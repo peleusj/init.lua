@@ -77,10 +77,6 @@ require("lazy").setup({
         end
     },
 
-    -- plugin/git.lua
-    "tpope/vim-fugitive",
-    "lewis6991/gitsigns.nvim",
-
     {
         "nvim-tree/nvim-tree.lua",
         version = "*",
@@ -90,8 +86,13 @@ require("lazy").setup({
         },
         config = function()
             require("nvim-tree").setup {}
+            vim.keymap.set("n", "<leader>tt", ":NvimTreeToggle<CR>")
         end,
     },
+
+    -- plugin/git.lua
+    "tpope/vim-fugitive",
+    "lewis6991/gitsigns.nvim",
 
     -- miscellaneous
     "fladson/vim-kitty",
