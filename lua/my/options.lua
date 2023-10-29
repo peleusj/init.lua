@@ -58,7 +58,7 @@ vim.opt.winblend = 0
 vim.opt.pumblend = 0
 
 -- https://github.com/neovim/neovim/pull/16251
--- vim.opt.cmdheight = 0
+vim.opt.cmdheight = 0
 
 -- https://github.com/neovim/neovim/pull/17266
 vim.opt.laststatus = 3
