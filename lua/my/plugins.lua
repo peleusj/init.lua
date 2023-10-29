@@ -13,14 +13,26 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
     {
-        -- "EdenEast/nightfox.nvim",
-        -- "rose-pine/nvim", name = "rose-pine"
-        -- { "echasnovski/mini.base16", version = false },
-        "rebelot/kanagawa.nvim",
+        "EdenEast/nightfox.nvim",
         lazy = false,
         priority = 1000,
         config = function()
-            vim.cmd("colorscheme kanagawa")
+            vim.cmd("colorscheme carbonfox")
+        end
+    },
+
+    {
+        "nvim-lualine/lualine.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        config = function()
+            require("lualine").setup {
+                options = {
+                    component_separators = { left = "", right = "" },
+                },
+                sections = {
+                    lualine_x = { "fileformat", "encoding", "filetype" },
+                }
+            }
         end
     },
 
